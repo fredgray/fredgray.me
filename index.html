@@ -2,9 +2,33 @@
 layout: default
 ---
 
-<div class="bg-blue">
-    <div class="container flex items-center justify-between mx-auto py-4 text-white text-xl tracking-tight uppercase">
-        Fred Gray
-        <img class="border-white border-2 w-12 h-12 rounded-full ml-6" src="https://pbs.twimg.com/profile_images/934509884351156225/vNnK2Ho9_400x400.jpg" alt="Avatar of Fred Gray">
-    </div>
-</div>
+        <div id="content" class="panel-container">
+          
+            <!-- Blog Page
+            ================================================== --> 
+            <div id="blog">
+                <div class="row">
+                    <section class="blog col-md-12 bottom_60">
+                        <div class="col-md-12 content-header">
+                            <div class="section-title top_30 bottom_15"><span></span><h2>Blog Posts</h2></div>
+                        </div>
+                        <div id="grid-blog" class="row">
+                            {% for post in site.data.news %}
+                                <!-- a blog -->
+                                <div class="cbp-item">
+                                    <a href="{{ post.url }}" class="blog-box" target="_blank">
+                                        <div class="blog-box-info">
+                                            <span class="category">{{ post.category | join: ", " }}</span> 
+                                            <h2 class="title">{{ post.title }}</h2>
+                                            <p class="little-text">{{ post.meta }}</p>
+                                            <span class="date">{{ post.date | date: "%d %b %Y"}}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </section>
+                </div>
+            </div>
+                
+        </div><!-- Content - End -->
