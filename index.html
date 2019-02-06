@@ -12,3 +12,7 @@ chapter: 1
     <li>Chapter {{ p.chapter }} - {{ p.title }}</li>
 {% endfor %}
 </ul>
+
+{% for x in site.documents %}
+<li>{{ x.title }} - <a href="{{ x.url }}">{{ x.url }}</a></li>
+{% endfor %}

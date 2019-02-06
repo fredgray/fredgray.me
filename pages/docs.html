@@ -1,0 +1,14 @@
+---
+layout: default
+title: Documents
+permalink: /docs
+---
+
+<h1>Documents</h1>
+
+<table class="mt-8 w-full">
+    {% assign docs = site.documents | sort: "order" %}
+    {% for d in docs %}
+    <tr class="bg-grey-lighter"><td class="border-2 border-white p-4"><a href="{{ d.url }}">{{ d.title }}</a></td></tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<span class="text-sm">{{ page.date | date: "%Y-%m-%d" }}</span>
+<h1>{{ page.title }}</h1>
+
+{% if page.attendees %}
+<h2 class="py-6">Attendees:</h2>
+    {% assign attendees = page.attendees | split: ";" %}
+    {% for a in attendees %}
+    <li class="px-6">{{ a }}</li>
+    {% endfor %}
+{% endif %}
+
+<h2 class="py-6">Meeting Notes:</h2>
+
+{{ content }}

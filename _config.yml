@@ -1,1 +1,8 @@
 permalink: pretty
+collections:
+  documents:
+    output: true
+    permalink: /docs/:path
+  meeting-notes:
+    output: true
+    permalink: /meeting-notes/:path
