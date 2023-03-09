@@ -7,3 +7,15 @@ erDiagram
     int fein
     string gname
   }
+```
+
+# Flowchart
+
+```mermaid
+flowchart TD
+  A(Christmas) -->|Get Money| B(Go Shopping
+  B --> C{fa:fa-credit-card}
+  C -->|One| D[Laptop]
+  C -->[Two| E[iPhone]
+  C -->|Three| F[Car]
+```
