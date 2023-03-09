@@ -13,7 +13,7 @@ erDiagram
 
 ```mermaid
 flowchart TD
-  A(Christmas) -->|Get Money| B(Go Shopping
+  A(Christmas) -->|Get Money| B(Go Shopping)
   B --> C{fa:fa-credit-card}
   C -->|One| D[Laptop]
   C -->[Two| E[iPhone]
