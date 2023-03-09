@@ -19,3 +19,26 @@ flowchart TD
   C -->|Two| E[iPhone]
   C -->|Three| F[Car]
 ```
+
+# Sequence Diagram
+```mermaid
+---
+title: ACA HQ Sequence Diagram
+---
+%%{
+  init: {
+    'rightAngles': true,
+    'showSequenceNumbers': true,
+    'useMaxWidth': true
+  }
+ }%%
+ sequenceDiagram
+  participant f as Fred
+  participant j as Jeri
+  participant t as Test
+  
+  f ->> j: Send Data
+  j ->> j: Process the Data
+  f ->> t: Send More Data
+  t ->> f: Return Response
+```
