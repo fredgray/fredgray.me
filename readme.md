@@ -27,7 +27,7 @@ title: ACA HQ Sequence Diagram
 ---
 %%{
   init: {
-    'theme': 'default',
+    'theme': 'base',
     'rightAngles': true,
     'showSequenceNumbers': true,
     'useMaxWidth': true
